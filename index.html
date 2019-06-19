@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Gue's Bootstrap Portfolio</title>
 </head>
 
 <body>
     <!--Header-->
-    <div class="container-fluid border-bottom">
+    <div class="container-fluid bg-white border-bottom">
         <div class="container"> <!--Container here in case another row need to be added in later.-->
             <div class="row"> <!--Row-->
                 <div class="col-sm bg-info">
@@ -19,14 +20,15 @@
                     </h1>
                 </div>
                 <div class="col-sm">
+                <!--I don't know how to do justify-content: space-between using Bootstrap, so I'm just going to put two empty col in between name and nav bar-->
                 <!--Empty column-->
                 </div>
                 <div class="col-sm">
                 <!--Empty column-->
                 </div>
                 <div class="col-sm">
-                    <nav class="navbar navbar-expand-lg pt-4 pb-3">
-                        <ul class="navbar-nav">
+                    <nav class="navbar navbar-expand-lg pt-4 pb-3 d-inline-flex">
+                        <ul class="navbar-nav flex-row "> <!--Issue is here. Create new style.css to put display: none or flex-direction: row to change ul from vertical to horizontal.-->
                             <li class="nav-item active px-2 border-right">
                                 <a class="nav-link text-black-50" href="index.html">About</a>
                             </li>
@@ -43,7 +45,7 @@
         </div> <!--Random container-->
     </div> <!--Header-->
     <!--Main-->
-    <div class="container mt-5 border">
+    <div class="container mt-5 bg-white border">
         <article class="row mt-2">
             <div class="col">
                 <div>
